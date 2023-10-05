@@ -21,7 +21,7 @@
 	role="navigation"
 	aria-label="main navigation"
 >
-	<NavbarBrand>BACKLOG</NavbarBrand>
+	<NavbarBrand><img src="src/logo.jpg" width="128" height="256" /></NavbarBrand>
 
 	<NavbarMenu>
 		<NavbarSection slot="start" section="start" items={startItems} />
