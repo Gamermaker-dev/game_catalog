@@ -9,4 +9,7 @@ export type FieldType = {
     groupAlignment?: 'centered' | 'right';
     multiline?: boolean;
     horizontal?: boolean;
+    hint?: string;
+    error?: string;
+    success?: string;
 }

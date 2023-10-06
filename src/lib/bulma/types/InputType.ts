@@ -1,17 +1,5 @@
-import type { Colors } from './Colors';
-import type { Sizes } from './Sizes';
+import type { SelectType } from './SelectType';
+import type { TextAreaType } from './TextAreaType';
+import type { TextFieldType } from './TextFieldType';
 
-export type InputType = {
-	value: any;
-	color?: Colors;
-	size?: Sizes;
-	isRounded?: boolean;
-	isHovered?: boolean;
-	isFocused?: boolean;
-	isLoading?: boolean;
-	isStatic?: boolean;
-	disabled?: boolean;
-	readonly?: boolean;
-    leftIcon?: string;
-	rightIcon?: string;
-};
+export type InputType = TextFieldType | TextAreaType | SelectType;
