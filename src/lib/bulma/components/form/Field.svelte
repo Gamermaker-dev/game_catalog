@@ -4,6 +4,9 @@
 	import Input from './Input.svelte';
 	import TextArea from './TextArea.svelte';
 	import Select from './Select.svelte';
+	import Checkbox from './Checkbox.svelte';
+	import Radio from './Radio.svelte';
+	import File from './File.svelte';
 
 	export let field: FieldType;
 
@@ -48,6 +51,28 @@
 				isLoading={input.isLoading}
 				icon={input.icon}
 				iconSize={input.iconSize}
+			/>
+		{:else if input.type === 'checkbox'}
+			<Checkbox
+				value={input.value}
+				label={input.label}
+				checked={input.checked}
+				disabled={input.disabled}
+				on:change
+			/>
+		{:else if input.type === 'radio'}
+			<Radio value={input.value} name={input.name} options={input.options} />
+		{:else if input.type === 'file'}
+			<File
+				value={input.value}
+				label={input.label}
+				hasName={input.hasName}
+				ctaIsRight={input.ctaIsRight}
+				isFullWidth={input.isFullWidth}
+				isBoxed={input.isBoxed}
+				color={input.color}
+				size={input.size}
+				alignment={input.alignment}
 			/>
 		{:else}
 			<Input
