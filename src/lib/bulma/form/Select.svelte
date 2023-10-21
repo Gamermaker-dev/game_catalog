@@ -2,7 +2,7 @@
 	import type { Colors } from '$lib/bulma/types/Colors';
 	import type { Sizes } from '$lib/bulma/types/Sizes';
 	import clsx from 'clsx';
-	import Icon from '../Icon.svelte';
+	import Icon from '../elements/Icon.svelte';
 
 	export let value: any;
 	export let options: { label: string; value: any }[] = [];

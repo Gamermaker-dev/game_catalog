@@ -3,7 +3,7 @@
 	import type { Alignments } from '../types/Alignments';
 	import type { Sizes } from '../types/Sizes';
 	import type { Breadcrumb } from '../types/Breadcrumb';
-	import Icon from './Icon.svelte';
+	import Icon from '../elements/Icon.svelte';
 	import type { Separators } from '../types/Separators';
 
 	export let breadcrumbs: Breadcrumb[] = [];

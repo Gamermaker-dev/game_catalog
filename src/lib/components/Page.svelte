@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Container from '$lib/bulma/components/Container.svelte';
-	import Row from '$lib/bulma/components/Row.svelte';
+	import Container from '$lib/bulma/layout/Container.svelte';
+	import Row from '$lib/bulma/layout/Row.svelte';
 </script>
 
 <Container>

@@ -1,14 +1,14 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import Page from '$lib/components/Page.svelte';
-	import Title from '$lib/bulma/components/Title.svelte';
-	import Column from '$lib/bulma/components/Column.svelte';
-	import Table from '$lib/bulma/components/Table.svelte';
+	import Title from '$lib/bulma/elements/Title.svelte';
+	import Column from '$lib/bulma/layout/Column.svelte';
+	import Table from '$lib/bulma/elements/Table.svelte';
 	import type { TableData } from '$lib/bulma/types/TableData';
-	import Button from '$lib/bulma/components/Button.svelte';
+	import Button from '$lib/bulma/elements/Button.svelte';
 	import type { Game } from '$lib/server/db/types/Game';
 	import clsx from 'clsx';
-	import Delete from '$lib/bulma/components/Delete.svelte';
+	import Delete from '$lib/bulma/elements/Delete.svelte';
 
 	export let data: PageData;
 

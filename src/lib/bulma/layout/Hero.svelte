@@ -1,6 +1,6 @@
 <script lang="ts">
 	import clsx from 'clsx';
-	import type { Colors } from '../types/Colors';
+	import type { Colors } from '../../types/Colors';
 
 	export let color: Colors | undefined = undefined;
 	export let size:
@@ -12,8 +12,8 @@
 		| 'fullheight-with-navbar'
 		| undefined = undefined;
 
-	export let hasHead: boolean = false;
-	export let hasFoot: boolean = false;
+	$: hasHead = $$slots.head;
+	$: hasFoot = $$slots.foot;
 </script>
 
 <section

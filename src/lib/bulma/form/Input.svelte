@@ -2,9 +2,9 @@
 	import type { Colors } from '$lib/bulma/types/Colors';
 	import type { Sizes } from '$lib/bulma/types/Sizes';
 	import clsx from 'clsx';
-	import Icon from '../Icon.svelte';
+	import Icon from '../elements/Icon.svelte';
 
-    export let value: string;
+	export let value: string;
 	export let type: 'text' | 'password' | 'email' | 'tel' = 'text';
 
 	export let color: Colors | undefined = undefined;
@@ -49,7 +49,7 @@
 		{type}
 		{disabled}
 		{readonly}
-        {value}
+		{value}
 	/>
 	{#if hasLeftIcon}
 		<Icon icon={leftIcon} placement="left" />
